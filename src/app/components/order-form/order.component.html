@@ -1,0 +1,39 @@
+<form class="order-form" [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+  <div class="order-form__group">
+    <input class="order-form__input" id="name" formControlName="name" placeholder="Ваше имя" (input)="onNameInput($event)" />
+    <div class="order-form__error-box">
+      <div *ngIf="name?.invalid && (name?.dirty || name?.touched)" class="order-form__error">
+        <div *ngIf="name?.errors?.['required']">Имя обязательно</div>
+        <div *ngIf="name?.errors?.['pattern']">Имя не должно содержать точки</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="order-form__group">
+    <input class="order-form__input" id="address" formControlName="address" placeholder="Адрес доставки" />
+    <div class="order-form__error-box">
+      <div *ngIf="address?.invalid && (address?.dirty || address?.touched)" class="order-form__error">
+        <div *ngIf="address?.errors?.['required']">Адрес обязателен</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="order-form__group">
+    <input class="order-form__input" id="phone" formControlName="phone" placeholder="Телефон" />
+    <div class="order-form__error-box">
+      <div *ngIf="phone?.invalid && (phone?.dirty || phone?.touched)" class="order-form__error">
+        <div *ngIf="phone?.errors?.['required']">Телефон обязателен</div>
+        <div *ngIf="phone?.errors?.['pattern']">Неверный формат телефона</div>
+      </div>
+    </div>
+  </div>
+  
+  <button class="order-form__button" type="submit">Оформить заказ</button>
+</form>
+
+<div *ngIf="orderSubmitted" class="popup">
+  <div class="popup__center">
+    <p class="popup__message">Спасибо за заказ</p>
+    <button class="popup__close" (click)="closePopup()">Закрыть</button>
+  </div>
+</div>

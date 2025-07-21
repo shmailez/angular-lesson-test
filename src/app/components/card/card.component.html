@@ -1,0 +1,10 @@
+<div class="card">
+  <img class="card__image" [src]="image" alt="{{name}}" (click)="openImage(image)" />
+  <h5 class="card__title">{{name}}</h5>
+  <p class="card__description">{{description}}</p>
+  <button class="card__button">В корзину</button>
+
+  <div *ngIf="isFullscreen" class="fullscreen" (click)="closeImage()">
+    <img [src]="image" alt="{{name}}" class="fullscreen__image" />
+  </div>
+</div>

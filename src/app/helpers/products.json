@@ -1,0 +1,42 @@
+[
+    {
+      "name": "Мясная Делюкс",
+      "description": "Пепперони, лук, бекон, томатная паста, колбаски, перец, грибы, соус чили, ананасы",
+      "image": "app/assets/images/pizza_1.jpg"
+    },
+    {
+      "name": "Морская Премиум",
+      "description": "Перец, сыр, креветки, кальмары, мидии, лосось",
+      "image": "app/assets/images/pizza_2.jpg"
+    },
+    {
+      "name": "Бекон и Сосиски",
+      "description": "Бекон, сыр, сосиски, ананас, томатная паста",
+      "image": "app/assets/images/pizza_3.jpg"
+    },
+    {
+      "name": "Куриная Делюкс",
+      "description": "Курица, ананас, сыр Пепперони, соус для пиццы, томатная паста",
+      "image": "app/assets/images/pizza_4.jpg"
+    },
+    {
+      "name": "Барбекю Премиум",
+      "description": "Свинина BBQ, соус Барбекю, сыр, курица, соус для пиццы, соус чили",
+      "image": "app/assets/images/pizza_5.jpg"
+    },
+    {
+      "name": "Пепперони Дабл",
+      "description": "Пепперони, сыр, колбаса 2 видов: обжаренная и вареная",
+      "image": "app/assets/images/pizza_6.jpg"
+    },
+    {
+      "name": "Куриное трио",
+      "description": "Жареная курица, Тушеная курица, Куриные наггетсы, перец, сыр, грибы, соус для пиццы",
+      "image": "app/assets/images/pizza_7.jpg"
+    },
+    {
+      "name": "Сырная",
+      "description": "Сыр Джюгас, Сыр с плесенью, Сыр Моцарелла, Сыр секретный",
+      "image": "app/assets/images/pizza_8.jpg"
+    }
+  ]

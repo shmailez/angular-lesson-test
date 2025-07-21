@@ -1,0 +1,62 @@
+<main class="main-content">
+    <div class="main-content__intro">
+      <div class="main-content__header">
+
+        <div class="main-content__features">
+          <h2 class="main-content__title">Самая вкусная пицца в мире <br/> <span class="main-content__subtitle">только в Pizza Cheff</span></h2>
+          <div class="main-content__left-side">
+            <div class="main-content__column">
+              <div class="feature">
+                <img class="feature__image" src="app/assets/icons/hop.svg" alt="hop"/>
+                <div class="feature__content">
+                  <h3 class="feature__title">Лучшее тесто</h3>
+                  <p class="feature__description">Мы создаем тесто только из отборной итальянской муки наивысшего качества</p>
+                </div>
+              </div>
+      
+              <div class="feature">
+                <img class="feature__image" src="app/assets/icons/seo-and-web.svg" alt="seo-and-web"/>
+                <div class="feature__content">
+                  <h3 class="feature__title">Лучшие повара</h3>
+                  <p class="feature__description">Пиццы готовят самые профессиональные итальянские повара</p>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="feature">
+                <img class="feature__image" src="app/assets/icons/kitchen-pack.svg" alt="kitchen-pack"/>
+                <div class="feature__content">
+                  <h3 class="feature__title">Гарантия качества</h3>
+                  <p class="feature__description">Наша пиццерия получила множество наград и признаний по всему миру</p>
+                </div>
+              </div>
+      
+              <div class="feature">
+                <img class="feature__image" src="app/assets/icons/holidays.svg" alt="holidays"/>
+                <div class="feature__content">
+                  <h3 class="feature__title">Отборные рецепты</h3>
+                  <p class="feature__description">Мы используем рецепты от мировых лидеров в изготовлении пиццы</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="main-content__button">Выбрать пиццу</button>
+
+        </div>
+  
+        <img class="main-content__image" src="app/assets/images/pizza_big.jpg"  />
+      </div>
+    </div>
+  
+    <div class="main-content__selection">
+      <h2 class="main-content__selection-title">Выберите свою любимую пиццу</h2>
+    </div>
+
+    <div class="main-content__products">
+      <div *ngFor="let product of products">
+        <card-component [name]="product.name" [description]="product.description" [image]="product.image"></card-component>
+      </div>
+    </div>
+  </main>
