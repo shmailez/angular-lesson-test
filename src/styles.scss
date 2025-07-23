@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
 body {
     box-sizing: border-box;
     font-family:'Times New Roman', Times, serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 700;
     margin: 0;
 }
@@ -16,6 +20,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: inherit;
   color: inherit;
+  font-weight: 700;
 }
 
 a {

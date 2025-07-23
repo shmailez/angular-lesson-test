@@ -94,7 +94,13 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/angular-lesson-test/",
+            "repo": "https://github.com/shmailez/angular-lesson-test.git",
+            "branch": "gh-pages",
+            "dir": "dist/angular-lesson-test/browser"
+          }
         }
       }
     }
